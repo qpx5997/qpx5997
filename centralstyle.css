@@ -1,0 +1,11 @@
+/* This file serves as a central CSS file that I can link to for basic styles, like background colors and fonts.
+Future websites I make will use this file.*/
+
+body {
+  gap: 20px;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, aquamarine, aqua);
+  text-align: center;
+  font-family: Overpass, sans-serif;
+}
