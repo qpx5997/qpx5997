@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>totally real web browser</title>
+    </head>
+    <body>
+        <h1>Totally Real Web Browser!!!</h1>
+        <h2>This web browser is really cool and i even reckon its really good!!! i like it and all the stuff</h2>
+        <h2>Instructions:</h2>
+        <h3>just type the url (WITH THE HTTPS) into the thingy !! then yay :3</h3>
+        <form>
+            <label for="url">Enter url here...</label><br>
+            <input type="text" id="url">
+            <input type="submit" value="Go">
+        </form>
+        <script>
+            const url = document.getElementById("url");
+
+            document.querySelector("form").addEventListener("submit", (event) => {
+                event.preventDefault();
+                updateIframe();
+            });
+
+            function updateIframe() {
+                let browser = document.querySelector("iframe")
+                browser.setAttribute("src", url.value);
+            }
+        </script>
+
+        <iframe src="" width="800" height="500"></iframe>
+
+        <p>note: sometimes it wont work bcs some websites do not like iframe for some reason but the point is that this is working and stuff !</p>
+    </body>
+</html>
